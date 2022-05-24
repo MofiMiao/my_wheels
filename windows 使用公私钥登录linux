@@ -1,0 +1,6 @@
+windows 使用公私钥登录linux(git同理)
+1、ssh-keygen 生成公私钥
+2、将公钥copy进服务器(需要知道是哪个用户)
+3、将公钥追加到当前用户的./ssh/authorized_keys
+4、.ssh 文件夹赋700权限,authorized_keys文件赋600权限
+5、windows就可以ssh登录这个用户的linux端了
